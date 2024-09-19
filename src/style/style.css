@@ -1,0 +1,170 @@
+@layer reset {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Lora", serif;
+        font-style: normal;
+        font-size: 1rem;
+    }
+}
+
+@layer root {
+    :root {
+        --White_Background: #fcfaf9;
+        --Salmon_titles: #ea5555;
+        --Pink_Secondary: #f6c6c2;
+        --Pink_Tertiary: #ffe7e7;
+        --Blue_Band: #193c6c;
+        --White: #ffffff;
+        --Black: #000000;      
+    }
+
+    body {
+      background-image: linear-gradient(90deg, var(--White_Background), var(--White_Background), var(--Pink_Tertiary));
+      padding: 15px 0px;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    h1 {
+        color: var(--Salmon_titles);
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        color: var(--Salmon_titles);
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+    }
+
+    p {
+        color: var(--Black);
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+}
+
+@layer header {
+    .container_header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .logotipo {
+        width: 120px;
+    }
+
+    .list_menu {
+        color: var(--Salmon_titles);
+        font-size: 15px;
+        font-weight: 800;
+        text-decoration: none;
+    }
+
+}
+
+@layer main {
+    .container_main {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        padding: 0 0 0 80px;
+    }
+
+    .div_main_title {
+        max-width: 50%;
+    }
+    
+    .banner {
+        max-width: 450px;
+    }
+
+    .faixa_blue {
+        background-color: var(--Blue_Band);
+        height: 50px;
+        margin-top: -10px;
+        z-index: 1;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .faixa__logo__pink {
+        width: 50%;
+        
+        border-style: solid;
+        border-width: 10px;
+    }
+
+    .logo_km {
+        width: 60px;
+    }
+
+    .titles_faixa {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 15px;
+        width: 50%;
+        border-style: solid;
+        border-width: 10px;
+    }
+
+    .title_faixa_blue {
+        color: var(--White);
+    }
+
+    .icons_rds {
+        width: 20px;
+    }
+}
+
+@layer section {
+  .video-yt {
+    display: flex;
+    justify-content: center;
+  }
+
+  .video {
+    border-radius: 8px;
+  }
+
+  .container_h2 {
+    padding: 50px 80px;
+  }
+}
+
+@layer button {
+    .container_button {
+        display: flex;
+        justify-content: center;
+    }
+
+    .button {
+        border-style: none;
+        color: var(--White_Background);
+        font-family: Verdana, Geneva, Tahoma, sans-serif
+        font-size: 1rem;
+        font-weight: 600px;
+        text-decoration: none;
+        background-color: var(--Salmon_titles);
+        border-radius: 8px;
+        padding: 15px 80px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .button:hover {
+        color: var(--Black);
+    }
+}
