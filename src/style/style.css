@@ -58,7 +58,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding: 0 20px;
+        padding: 0 80px;
     }
 
     .logotipo {
@@ -70,6 +70,15 @@
         font-size: 15px;
         font-weight: 800;
         text-decoration: none;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 8px;
+        border-color: var(--Pink_Secondary);
+        padding: 15px 30px;
+    }
+
+    .list_menu:hover {
+        background-color: var(--Pink_Secondary);
     }
 
 }
@@ -88,22 +97,23 @@
     
     .banner {
         max-width: 450px;
+        margin-bottom: 5.1px;
     }
 
     .faixa_blue {
-        background-color: var(--Blue_Band);
-        height: 50px;
+        background-color: var(--Pink_Tertiary);
+        height: 60px;
         margin-top: -10px;
         z-index: 1;
         display: flex;
-        flex-flow: row wrap;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 80px;
     }
 
     .faixa__logo__pink {
         width: 50%;
         
-        border-style: solid;
-        border-width: 10px;
     }
 
     .logo_km {
@@ -116,13 +126,11 @@
         align-items: center;
         justify-content: flex-start;
         gap: 15px;
-        width: 50%;
-        border-style: solid;
-        border-width: 10px;
+        width: 50%;        
     }
 
     .title_faixa_blue {
-        color: var(--White);
+        color: var(--Salmon_titles);
     }
 
     .icons_rds {
@@ -165,6 +173,15 @@
     }
 
     .button:hover {
-        color: var(--Black);
+        color: var(--Salmon_titles);
+        background-color: var(--Pink_Secondary);
+    }
+}
+
+@layer footer {
+    .container_footer {
+        display: flex;
+        justify-content: center;
+        padding: 50px 0 50px 0;
     }
 }
