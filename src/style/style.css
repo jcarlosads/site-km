@@ -141,6 +141,13 @@
   .video-yt {
     display: flex;
     justify-content: center;
+    width: 100%;
+ }
+
+  .video-yt iframe {
+   width: 50%;
+   aspect-ratio: 16 / 9;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
   .video {
@@ -207,4 +214,7 @@
         font-size: 14px;
         text-align: center;
     }
+
+    .video-yt iframe {
+        width: 75%;
 }
